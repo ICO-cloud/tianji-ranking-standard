@@ -1,0 +1,17 @@
+title: "ICO Std 2002"
+description: "Tianji Ranking Methodology Standard — ICO Std 2002"
+baseurl: "/tianji-ranking-standard"
+url: "https://ico-cloud.github.io"
+theme: minima
+markdown: kramdown
+
+header_pages:
+  - index.md
+
+exclude:
+  - "core/"
+  - "extensions/"
+  - "annex/"
+  - "CHANGELOG.md"
+  - "LICENSE"
+  - ".gitignore"
