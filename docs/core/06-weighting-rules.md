@@ -1,19 +1,19 @@
-                # Chapter 6: Weighting Rules
-                ## 第6章 权重分配规则
+# Chapter 6: Weighting Rules
+## 第6章 权重分配规则
 
-                **ICO Std 2002 — Chapter 6**
+**ICO Std 2002 — Chapter 6**
 
-                ---
+---
 
-                ## Purpose | 目的
+## Purpose | 目的
 
-                Establish rules and methods for assigning and validating weights in ranking systems, preventing arbitrary or opaque weight manipulation.
+Establish rules and methods for assigning and validating weights in ranking systems, preventing arbitrary or opaque weight manipulation.
 
-                ---
+---
 
-                ## Chapter Structure | 章节结构
+## Chapter Structure | 章节结构
 
-                ## 6.1 Weight Assignment Methods | 权重分配方法
+## 6.1 Weight Assignment Methods | 权重分配方法
 ### 6.1.1 Expert-Based Weighting | 专家赋权法
 ### 6.1.2 Data-Driven Weighting | 数据驱动赋权法
 ### 6.1.3 Hybrid Weighting | 混合赋权法
@@ -35,9 +35,9 @@
 ### 6.4.3 Temporal Consistency | 时序一致性
 
 
-                ---
+---
 
-                > **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
-                > Content will be populated through the standard development process and public comment period.
-                >
-                > **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
+> **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
+> Content will be populated through the standard development process and public comment period.
+>
+> **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
