@@ -1,19 +1,19 @@
-                # Chapter 11: Compliance Declaration and Certification
-                ## 第11章 合规性声明与认证
+# Chapter 11: Compliance Declaration and Certification
+## 第11章 合规性声明与认证
 
-                **ICO Std 2002 — Chapter 11**
+**ICO Std 2002 — Chapter 11**
 
-                ---
+---
 
-                ## Purpose | 目的
+## Purpose | 目的
 
-                Define the mechanisms for declaring compliance with ICO Std 2002 and the certification process for ranking systems.
+Define the mechanisms for declaring compliance with ICO Std 2002 and the certification process for ranking systems.
 
-                ---
+---
 
-                ## Chapter Structure | 章节结构
+## Chapter Structure | 章节结构
 
-                ## 11.1 Compliance Declaration | 合规性声明
+## 11.1 Compliance Declaration | 合规性声明
 ### 11.1.1 Self-Declaration Template | 自声明模板
 ### 11.1.2 Conformance Checklist | 一致性检查表
 ### 11.1.3 Partial Conformance Declaration | 部分一致性声明
@@ -35,9 +35,9 @@
 ### 11.4.3 Arbitration (Final Resort) | 仲裁（最终手段）
 
 
-                ---
+---
 
-                > **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
-                > Content will be populated through the standard development process and public comment period.
-                >
-                > **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
+> **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
+> Content will be populated through the standard development process and public comment period.
+>
+> **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
