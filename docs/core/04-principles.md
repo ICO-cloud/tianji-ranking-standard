@@ -1,19 +1,19 @@
-                # Chapter 4: General Principles
-                ## 第4章 通用原则
+# Chapter 4: General Principles
+## 第4章 通用原则
 
-                **ICO Std 2002 — Chapter 4**
+**ICO Std 2002 — Chapter 4**
 
-                ---
+---
 
-                ## Purpose | 目的
+## Purpose | 目的
 
-                Define the fundamental principles governing all ranking methodologies under ICO Std 2002, aligned with the IREG Berlin Principles as the foundational ethical framework.
+Define the fundamental principles governing all ranking methodologies under ICO Std 2002, aligned with the IREG Berlin Principles as the foundational ethical framework.
 
-                ---
+---
 
-                ## Chapter Structure | 章节结构
+## Chapter Structure | 章节结构
 
-                ## 4.1 Berlin Principles Alignment | 柏林原则对齐
+## 4.1 Berlin Principles Alignment | 柏林原则对齐
 ### 4.1.1 Purpose and Target Group Clarity | 目的与目标群体清晰性
 ### 4.1.2 Indicator Selection Rationale | 指标选择合理性
 ### 4.1.3 Data Collection and Processing Integrity | 数据采集与处理完整性
@@ -33,9 +33,9 @@
 ### 4.3.3 Harm Prevention | 伤害预防
 
 
-                ---
+---
 
-                > **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
-                > Content will be populated through the standard development process and public comment period.
-                >
-                > **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
+> **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
+> Content will be populated through the standard development process and public comment period.
+>
+> **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
