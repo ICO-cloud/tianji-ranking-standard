@@ -1,19 +1,19 @@
-                # Chapter 9: Result Publication and Transparency
-                ## 第9章 结果发布与透明度
+# Chapter 9: Result Publication and Transparency
+## 第9章 结果发布与透明度
 
-                **ICO Std 2002 — Chapter 9**
+**ICO Std 2002 — Chapter 9**
 
-                ---
+---
 
-                ## Purpose | 目的
+## Purpose | 目的
 
-                Define requirements for publishing ranking results, ensuring methodological transparency, and providing sufficient information for reproducibility and scrutiny.
+Define requirements for publishing ranking results, ensuring methodological transparency, and providing sufficient information for reproducibility and scrutiny.
 
-                ---
+---
 
-                ## Chapter Structure | 章节结构
+## Chapter Structure | 章节结构
 
-                ## 9.1 Publication Requirements | 发布要求
+## 9.1 Publication Requirements | 发布要求
 ### 9.1.1 Minimum Disclosure Set | 最低披露集
 ### 9.1.2 Methodology Statement | 方法论声明
 ### 9.1.3 Data Summary | 数据摘要
@@ -36,9 +36,9 @@
 ### 9.4.3 Appeal Process | 申诉程序
 
 
-                ---
+---
 
-                > **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
-                > Content will be populated through the standard development process and public comment period.
-                >
-                > **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
+> **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
+> Content will be populated through the standard development process and public comment period.
+>
+> **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
