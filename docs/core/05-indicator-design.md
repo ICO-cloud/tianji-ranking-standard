@@ -1,19 +1,19 @@
-                # Chapter 5: Indicator System Design
-                ## 第5章 指标体系设计
+# Chapter 5: Indicator System Design
+## 第5章 指标体系设计
 
-                **ICO Std 2002 — Chapter 5**
+**ICO Std 2002 — Chapter 5**
 
-                ---
+---
 
-                ## Purpose | 目的
+## Purpose | 目的
 
-                Specify the requirements for designing indicator systems, aligned with ISO 20671 framework, ensuring each indicator is measurable, relevant, and properly documented.
+Specify the requirements for designing indicator systems, aligned with ISO 20671 framework, ensuring each indicator is measurable, relevant, and properly documented.
 
-                ---
+---
 
-                ## Chapter Structure | 章节结构
+## Chapter Structure | 章节结构
 
-                ## 5.1 Indicator Selection Criteria | 指标选择标准
+## 5.1 Indicator Selection Criteria | 指标选择标准
 ### 5.1.1 Relevance | 相关性
 ### 5.1.2 Measurability | 可测性
 ### 5.1.3 Independence | 独立性
@@ -36,9 +36,9 @@
 ### 5.4.2 Cross-Domain Applicability | 跨领域适用性
 
 
-                ---
+---
 
-                > **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
-                > Content will be populated through the standard development process and public comment period.
-                >
-                > **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
+> **Note**: This chapter framework is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
+> Content will be populated through the standard development process and public comment period.
+>
+> **注意**：本章节框架属于 ICO Std 2002（天机排名方法论标准）。内容将通过标准制定过程和公众评议期逐步填充。
