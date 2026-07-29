@@ -1,19 +1,19 @@
-                # Annex B: ISO Standards Alignment
-                ## 附录B ISO标准对齐说明
+# Annex B: ISO Standards Alignment
+## 附录B ISO标准对齐说明
 
-                **ICO Std 2002 — Annex B (Informative)**
+**ICO Std 2002 — Annex B (Informative)**
 
-                ---
+---
 
-                ## Purpose | 目的
+## Purpose | 目的
 
-                Document the alignment between ICO Std 2002 and relevant ISO standards, specifying how each ISO requirement is addressed or extended.
+Document the alignment between ICO Std 2002 and relevant ISO standards, specifying how each ISO requirement is addressed or extended.
 
-                ---
+---
 
-                ## Structure | 结构
+## Structure | 结构
 
-                ## B.1 ISO 20671:2019 Alignment | ISO 20671对齐
+## B.1 ISO 20671:2019 Alignment | ISO 20671对齐
 ### B.1.1 Brand Evaluation Principles | 品牌评估原则
 ### B.1.2 Indicator Requirements | 指标要求
 ### B.1.3 Gaps and Extensions | 差距与扩展
@@ -34,9 +34,9 @@
 ### B.4.3 ICO-Specific Adaptations | ICO特定适配
 
 
-                ---
+---
 
-                > **Note**: This annex is informative and part of ICO Std 2002 (Tianji Ranking Methodology Standard).
-                > Mapping details will be populated through the standard development process.
-                >
-                > **注意**：本附录为资料性附录，属于 ICO Std 2002（天机排名方法论标准）。对照细节将通过标准制定过程逐步填充。
+> **Note**: This annex is informative and part of ICO Std 2002 (Tianji Ranking Methodology Standard).
+> Mapping details will be populated through the standard development process.
+>
+> **注意**：本附录为资料性附录，属于 ICO Std 2002（天机排名方法论标准）。对照细节将通过标准制定过程逐步填充。
