@@ -5,13 +5,30 @@ url: "https://ico-cloud.github.io"
 theme: minima
 markdown: kramdown
 
-header_pages:
-  - index.md
+# 让 Jekyll 渲染所有目录
+include:
+  - core/
+  - extensions/
+  - annex/
 
+# 排除不需要渲染的文件
 exclude:
-  - "core/"
-  - "extensions/"
-  - "annex/"
-  - "CHANGELOG.md"
-  - "LICENSE"
-  - ".gitignore"
+  - CHANGELOG.md
+  - LICENSE
+  - .gitignore
+  - README.md
+
+# 自定义变量
+defaults:
+  - scope:
+      path: "core"
+    values:
+      layout: "default"
+  - scope:
+      path: "extensions"
+    values:
+      layout: "default"
+  - scope:
+      path: "annex"
+    values:
+      layout: "default"
