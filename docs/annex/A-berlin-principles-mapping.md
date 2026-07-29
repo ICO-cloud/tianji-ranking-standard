@@ -1,19 +1,19 @@
-                # Annex A: IREG Berlin Principles Mapping
-                ## 附录A IREG柏林原则对照表
+# Annex A: IREG Berlin Principles Mapping
+## 附录A IREG柏林原则对照表
 
-                **ICO Std 2002 — Annex A (Informative)**
+**ICO Std 2002 — Annex A (Informative)**
 
-                ---
+---
 
-                ## Purpose | 目的
+## Purpose | 目的
 
-                Provide a detailed mapping between the IREG Berlin Principles on Ranking of Higher Education Institutions and the corresponding provisions in ICO Std 2002, demonstrating full alignment and any ICO-specific extensions.
+Provide a detailed mapping between the IREG Berlin Principles on Ranking of Higher Education Institutions and the corresponding provisions in ICO Std 2002, demonstrating full alignment and any ICO-specific extensions.
 
-                ---
+---
 
-                ## Structure | 结构
+## Structure | 结构
 
-                ## A.1 Overview of Berlin Principles | 柏林原则概览
+## A.1 Overview of Berlin Principles | 柏林原则概览
 ### A.1.1 History and Context | 历史与背景
 ### A.1.2 Scope of Application | 适用范围
 
@@ -42,9 +42,9 @@
 ### A.3.4 UN DCP Alignment
 
 
-                ---
+---
 
-                > **Note**: This annex is informative and part of ICO Std 2002 (Tianji Ranking Methodology Standard).
-                > Mapping details will be populated through the standard development process.
-                >
-                > **注意**：本附录为资料性附录，属于 ICO Std 2002（天机排名方法论标准）。对照细节将通过标准制定过程逐步填充。
+> **Note**: This annex is informative and part of ICO Std 2002 (Tianji Ranking Methodology Standard).
+> Mapping details will be populated through the standard development process.
+>
+> **注意**：本附录为资料性附录，属于 ICO Std 2002（天机排名方法论标准）。对照细节将通过标准制定过程逐步填充。
