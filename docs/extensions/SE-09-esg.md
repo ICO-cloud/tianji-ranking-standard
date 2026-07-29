@@ -1,33 +1,612 @@
-# SE-09: ESG and Sustainability
-## ESG与可持续
+# SE-09: Comprehensive ESG Evaluation | 综合ESG评价类
 
 **ICO Std 2002 — Extension SE-09**
 
 ---
 
-## Applicable Objects | 适用对象
+This extension module specifies the methodology requirements for comprehensive Environmental, Social, and Governance (ESG) evaluation of corporate entities. While SE-08 addresses sustainability and environmental performance with a planetary-boundaries orientation, this module focuses on enterprise-level ESG assessment as practiced by institutional investors, rating agencies, and financial regulators. The two modules are complementary: SE-08 evaluates what the planet and society require; SE-09 evaluates how well enterprises manage ESG risks and opportunities within their business context. This module extends the core layer (Chapters 4–10) with the E, S, and G pillar structure, ESG integration strategies, and cross-framework disclosure mapping.
 
-Corporations, investment portfolios, sovereign entities, projects
-
-## Core Dimensions | 核心维度
-
-- Environmental Performance | 环境绩效
-- Carbon Footprint | 碳足迹
-- Social Impact | 社会影响
-- Governance Quality | 治理质量
-- Climate Risk Assessment | 气候风险评估
-- Biodiversity Impact | 生物多样性影响
-- Stakeholder Relations | 利益相关方关系
-
-## References to Core Layer | 核心层引用
-
-- Chapter 4 (Principles)
-- Chapter 5 (Indicator Design)
-- GRI/MSCI Framework Alignment
+本扩展模块规定了企业实体综合环境、社会与治理（ESG）评价的方法论要求。SE-08以行星边界为导向处理可持续性和环境绩效，而本模块聚焦于机构投资者、评级机构和金融监管者实践的企业级ESG评估。两个模块互补：SE-08评估地球和社会需要什么；SE-09评估企业在其商业语境中管理ESG风险和机会的程度。本模块在核心层（第4至10章）基础上扩展了E、S、G支柱结构、ESG整合策略和跨框架披露映射。
 
 ---
 
-> **Note**: This extension module is part of ICO Std 2002 (Tianji Ranking Methodology Standard).
-> Dimension definitions and indicator specifications will be developed by the SE-09 Working Group.
->
-> **注意**：本扩展模块属于 ICO Std 2002（天机排名方法论标准）。维度定义和指标规格将由 SE-09 工作组制定。
+## SE-9.1 Scope and Applicable Objects | 范围与适用对象
+
+### SE-9.1.1 Scope | 范围
+
+This module shall apply to the design, execution, and governance of ranking systems that evaluate:
+
+本模块应适用于以下评估对象排名系统的设计、执行与治理：
+
+a) listed and unlisted corporations on comprehensive ESG performance;
+
+上市与非上市公司综合ESG绩效；
+
+b) investment funds and portfolios on ESG criteria integration;
+
+投资基金与组合的ESG准则整合；
+
+c) sovereign and quasi-sovereign issuers on ESG risk;
+
+主权及准主权发行人的ESG风险；
+
+d) financial instruments (bonds, structured products) on ESG-labeled credentials.
+
+金融工具（债券、结构化产品）的ESG标识凭证。
+
+### SE-9.1.2 Normative References | 规范性引用
+
+The following references shall inform the design of ESG ranking methodologies:
+
+以下引用应指导ESG排名方法论的设计：
+
+- MSCI ESG Ratings methodology — Issues, Key Issues, and Weighted Average Score approach（MSCI ESG评级方法论——议题、关键议题与加权平均分数方法）
+- Sustainalytics ESG Risk Ratings methodology — Unmanaged Risk framework（Sustainalytics ESG风险评级方法论——未管理风险框架）
+- ISS ESG Corporate Rating methodology（ISS ESG企业评级方法论）
+- CDP (Carbon Disclosure Project) questionnaire and scoring methodology（CDP问卷与评分方法论）
+- TCFD Recommendations (2017, updated 2023)（TCFD建议）
+- SASB Standards — industry-specific material ESG issues（SASB标准——行业特定重大ESG事项）
+- EU SFDR (Sustainable Finance Disclosure Regulation, 2019/2088)（欧盟可持续金融披露条例）
+- IOSCO ESG Ratings and Data Products Providers Statement (2021)（国际证监组织ESG评级与数据产品提供方声明）
+
+### SE-9.1.3 Relationship to Core Layer and SE-08 | 与核心层及SE-08的关系
+
+a) This module shall conform to the core layer (Chapters 4–10) as specified in the standard.
+
+本模块应按标准规定符合核心层（第4至10章）。
+
+b) This module is complementary to SE-08 (Sustainability). Where overlap exists (e.g., environmental indicators), the ranking entity shall document the differentiation:
+本模块与SE-08（可持续性）互补。当存在重叠时（如环境指标），排名实体应记录差异：
+1) SE-08 evaluates absolute sustainability performance relative to planetary boundaries;
+   SE-08评估相对于行星边界的绝对可持续性绩效；
+2) SE-09 evaluates ESG risk management and opportunity capture relative to industry peers and financial materiality.
+   SE-09评估相对于行业同行和财务重大性的ESG风险管理及机会捕获。
+
+c) The ranking entity may reference SE-08 indicators for environmental data but shall apply ESG-specific weighting and interpretation.
+
+排名实体可引用SE-08指标获取环境数据，但应适用ESG特定的加权和解读。
+
+---
+
+## SE-9.2 ESG Pillar Structure | ESG支柱结构
+
+### SE-9.2.1 Three-Pillar Framework | 三支柱框架
+
+The ESG evaluation shall be organized into three pillars, each comprising multiple themes:
+
+ESG评价应组织为三个支柱，每个支柱包含多个主题：
+
+| Pillar | Code | Weight Range | 说明 |
+|--------|------|-------------|------|
+| Environmental | SE-9.2.1.1 | 25 %–40 % | 环境支柱 |
+| Social | SE-9.2.1.2 | 25 %–40 % | 社会支柱 |
+| Governance | SE-9.2.1.3 | 20 %–35 % | 治理支柱 |
+
+a) Pillar weights shall be determined by the ranking entity based on stated methodology and shall be disclosed with rationale.
+
+支柱权重应由排名实体基于声明方法论确定，并应连同依据披露。
+
+b) The ranking entity should implement industry-specific pillar weighting to reflect sector materiality, provided that the weighting methodology is documented and applied consistently within each sector.
+
+排名实体应实施行业特定支柱加权以反映行业重要性，前提是加权方法论已记录并在每个行业内一致适用。
+
+---
+
+## SE-9.3 Environmental Pillar (E) | 环境支柱
+
+### SE-9.3.1 Climate Change | 气候变化
+
+a) Climate change indicators shall cover both risk and opportunity dimensions:
+气候变化指标应涵盖风险与机会两个维度：
+
+**Risk indicators | 风险指标**
+
+1) Carbon emissions exposure — Scope 1, 2, 3 emissions intensity relative to sector median;
+   碳排放敞口——范围1、2、3排放强度相对于行业中位数；
+2) Transition risk — Fossil fuel dependency, carbon-intensive asset exposure, stranded asset risk;
+   转型风险——化石燃料依赖、碳密集资产敞口、搁浅资产风险；
+3) Physical risk — Exposure to climate hazards (acute: storms, floods; chronic: sea level rise, heat stress) based on geographic footprint and asset location.
+   物理风险——基于地理足迹和资产位置的气候灾害敞口（急性：风暴、洪水；慢性：海平面上升、热压力）。
+
+**Opportunity indicators | 机会指标**
+
+4) Clean technology revenue share — Revenue from low-carbon products and services as a proportion of total revenue;
+   清洁技术收入份额——低碳产品和服务收入占总收入比例；
+5) Green capital expenditure — Investment in decarbonization and climate adaptation as a proportion of total CapEx;
+   绿色资本支出——脱碳和气候适应投资占总资本支出比例；
+6) Climate resilience — Adaptation measures implemented, climate scenario planning quality.
+   气候韧性——已实施的适应措施、气候情景规划质量。
+
+b) Climate indicators shall be assessed with reference to TCFD recommendations and sector-specific transition pathways.
+
+气候指标应参照TCFD建议和行业特定转型路径评估。
+
+### SE-9.3.2 Natural Resources | 自然资源
+
+a) Natural resource indicators shall include:
+自然资源指标应包括：
+
+1) Water stress exposure — Withdrawal from water-stressed regions, water efficiency, water recycling rates;
+   水资源压力敞口——从水资源紧张地区的取水、用水效率、水循环率；
+2) Land use and biodiversity — Land footprint, deforestation exposure, biodiversity impact assessment;
+   土地利用与生物多样性——土地足迹、毁林敞口、生物多样性影响评估；
+3) Raw material sustainability — Critical mineral dependency, recycled content, circular economy practices.
+   原材料可持续性——关键矿物依赖、再生含量、循环经济实践。
+
+### SE-9.3.3 Pollution and Waste | 污染与废弃物
+
+a) Pollution and waste indicators shall include:
+污染与废弃物指标应包括：
+
+1) Toxic emissions and waste — Release of regulated substances, hazardous waste generation and management;
+   有毒排放与废弃物——受管制物质释放、危险废弃物产生与管理；
+2) Packaging and product lifecycle — Packaging sustainability, product recyclability, extended producer responsibility compliance;
+   包装与产品生命周期——包装可持续性、产品可回收性、延伸生产者责任合规；
+3) Environmental incidents — Number and severity of spills, releases, and regulatory violations.
+   环境事件——泄漏、释放和监管违规的数量与严重程度。
+
+### SE-9.3.4 Environmental Opportunities | 环境机会
+
+a) Environmental opportunity indicators shall capture proactive value creation:
+环境机会指标应捕获主动价值创造：
+
+1) Renewable energy — Renewable energy consumption share, renewable energy generation capacity, power purchase agreements;
+   可再生能源——可再生能源消费份额、发电能力、购电协议；
+2) Green innovation — Green R&D expenditure, green patent filing rate, clean technology portfolio;
+   绿色创新——绿色研发支出、绿色专利申请率、清洁技术组合；
+3) Sustainable market positioning — ESG-labeled product revenue, green certification portfolio, market share in sustainable segments.
+   可持续市场定位——ESG标识产品收入、绿色认证组合、可持续细分市场份额。
+
+---
+
+## SE-9.4 Social Pillar (S) | 社会支柱
+
+### SE-9.4.1 Human Capital | 人力资本
+
+a) Human capital indicators shall include:
+人力资本指标应包括：
+
+1) Workforce diversity and inclusion — Gender, ethnic, and age diversity metrics at all organizational levels, pay equity ratios;
+   劳动力多样性与包容——各组织层级的性别、种族和年龄多样性指标、薪酬公平比；
+2) Employee development — Training investment per employee, internal promotion rates, career development program coverage;
+   员工发展——人均培训投入、内部晋升率、职业发展项目覆盖率；
+3) Employee health and safety — Lost-time injury rate (LTIR), total recordable incident rate (TRIR), near-miss reporting rates;
+   员工健康与安全——损失工时伤害率（LTIR）、总可记录事件率（TRIR）、未遂事件报告率；
+4) Employee engagement and retention — Turnover rates, engagement survey scores, long-term employee retention.
+   员工参与与留任——离职率、参与度调查分数、长期员工留任率。
+
+b) Human capital indicators shall be normalized by industry context (e.g., higher inherent safety risk in construction vs. financial services).
+
+人力资本指标应按行业语境归一化（如建筑业与金融服务业的固有安全风险差异）。
+
+### SE-9.4.2 Product Responsibility | 产品责任
+
+a) Product responsibility indicators shall include:
+产品责任指标应包括：
+
+1) Product quality and safety — Recall rates, safety incident rates, quality management system certification (ISO 9001);
+   产品质量与安全——召回率、安全事故率、质量管理体系认证（ISO 9001）；
+2) Responsible marketing — Marketing standards compliance, vulnerable population protection, advertising truthfulness;
+   负责任营销——营销标准合规、弱势群体保护、广告真实性；
+3) Data privacy and security — Data breach incidents, privacy compliance (GDPR, CCPA, etc.), cybersecurity maturity rating;
+   数据隐私与安全——数据泄露事件、隐私合规（GDPR、CCPA等）、网络安全成熟度评级；
+4) Access and affordability — Pricing practices for essential products/services, access programs for underserved populations.
+   可及性与可负担性——基础产品/服务定价实践、欠服务人群的准入项目。
+
+### SE-9.4.3 Community Relations | 社区关系
+
+a) Community relations indicators shall include:
+社区关系指标应包括：
+
+1) Community investment — Philanthropic spending, in-kind contributions, employee volunteering programs;
+   社区投资——慈善支出、实物贡献、员工志愿项目；
+2) Local economic impact — Local procurement, local hiring, SME supplier development;
+   本地经济影响——本地采购、本地招聘、中小企业供应商培育；
+3) Stakeholder engagement — Quality and frequency of community consultation, grievance mechanisms, impact assessment processes.
+   利益相关方参与——社区咨询的质量与频率、申诉机制、影响评估程序。
+
+### SE-9.4.4 Supply Chain Labor Standards | 供应链劳工标准
+
+a) Supply chain labor indicators shall include:
+供应链劳工指标应包括：
+
+1) Supplier labor audit coverage — Percentage of suppliers audited for labor standards;
+   供应商劳工审计覆盖率——经劳工标准审计的供应商百分比；
+2) Critical labor findings — Number and severity of child labor, forced labor, and unsafe working condition findings;
+   重大劳工发现——童工、强迫劳动和不安全工作条件发现的数量与严重程度；
+3) Responsible sourcing programs — Conflict mineral due diligence, living wage commitments, freedom of association in supply chain.
+   负责任采购计划——冲突矿物尽职调查、生活工资承诺、供应链结社自由。
+
+---
+
+## SE-9.5 Governance Pillar (G) | 治理支柱
+
+### SE-9.5.1 Board Structure and Effectiveness | 董事会结构与有效性
+
+a) Board structure indicators shall include:
+董事会结构指标应包括：
+
+1) Board independence — Proportion of independent directors, separation of Chair and CEO roles;
+   董事会独立性——独立董事比例、董事长与CEO角色分离；
+2) Board diversity — Gender, ethnic, skill-set, and tenure diversity of board members;
+   董事会多样性——董事会成员的性别、种族、技能组合和任期多样性；
+3) Board expertise — ESG/sustainability expertise on the board, industry-specific knowledge, risk management experience;
+   董事会专业能力——董事会的ESG/可持续性专业知识、行业特定知识、风险管理经验；
+4) Board oversight effectiveness — Frequency and quality of ESG/sustainability committee meetings, board engagement with ESG issues.
+   董事会监督有效性——ESG/可持续性委员会会议频率与质量、董事会对ESG事项的参与。
+
+b) Board indicators shall be assessed in the context of the entity's ownership structure (e.g., family-controlled, state-controlled, widely-held), as governance best practices vary by context.
+
+董事会指标应在实体的所有权结构语境中评估（如家族控制、国家控制、广泛持有），因为治理最佳实践因语境而异。
+
+### SE-9.5.2 Business Ethics | 商业伦理
+
+a) Business ethics indicators shall include:
+商业伦理指标应包括：
+
+1) Anti-corruption program — Policies, training coverage, incident reporting and investigation procedures, whistle-blower protection;
+   反腐败计划——政策、培训覆盖率、事件报告与调查程序、举报人保护；
+2) Political activity — Political contribution disclosure, lobbying expenditure transparency, trade association memberships disclosed;
+   政治活动——政治捐款披露、游说支出透明性、行业协会成员披露；
+3) Competitive practices — Anti-trust compliance, fair competition policies, market manipulation prevention;
+   竞争实践——反垄断合规、公平竞争政策、市场操纵防范；
+4) Intellectual property — IP protection practices, respect for third-party IP, open innovation policies.
+   知识产权——知识产权保护实践、尊重第三方知识产权、开放创新政策。
+
+### SE-9.5.3 Tax Transparency | 税务透明度
+
+a) Tax transparency indicators shall include:
+税务透明度指标应包括：
+
+1) Country-by-country reporting — Disclosure of revenue, profit, tax paid, and employees by jurisdiction;
+   逐国报告——按管辖区披露收入、利润、已缴税款和员工；
+2) Effective tax rate — Comparison of effective tax rate to statutory rate, with explanation of material differences;
+   有效税率——有效税率与法定税率比较，附重大差异说明；
+3) Tax governance — Board oversight of tax strategy, published tax strategy statement, relationship with tax authorities.
+   税务治理——董事会对税务战略的监督、已发布的税务战略声明、与税务机关的关系。
+
+b) The ranking entity shall not penalize legitimate tax planning but shall flag aggressive tax avoidance structures (e.g., use of tax havens without substantive economic activity).
+
+排名实体不应惩罚合法税务规划，但应标记激进的避税结构（如无实质性经济活动的避税天堂使用）。
+
+### SE-9.5.4 Risk Management | 风险管理
+
+a) Risk management indicators shall include:
+风险管理指标应包括：
+
+1) Enterprise risk management (ERM) maturity — Framework comprehensiveness, integration with strategy, risk culture assessment;
+   企业风险管理（ERM）成熟度——框架全面性、与战略的整合、风险文化评估；
+2) ESG risk integration — Explicit identification and management of ESG risks within ERM framework, ESG risk appetite statements;
+   ESG风险整合——在ERM框架内明确识别和管理ESG风险、ESG风险偏好声明；
+3) Crisis preparedness — Business continuity plans, crisis communication procedures, historical crisis response quality.
+   危机应对准备——业务连续性计划、危机沟通程序、历史危机应对质量。
+
+---
+
+## SE-9.6 ESG Integration Strategies | ESG整合策略
+
+### SE-9.6.1 Strategy Taxonomy | 策略分类
+
+The ranking entity shall document which ESG integration strategy (or combination of strategies) it employs. Recognized strategies include:
+
+排名实体应记录其采用哪种（或哪几种组合的）ESG整合策略。公认策略包括：
+
+**SE-9.6.1.1 Negative/exclusionary screening | 负面/排除性筛选**
+
+a) Entities that fail to meet minimum ESG thresholds or engage in excluded activities (e.g., controversial weapons, thermal coal above threshold) shall be excluded from the ranking universe.
+
+未能满足最低ESG门槛或从事排除活动（如争议性武器、超门槛热煤）的实体应从排名范围中排除。
+
+b) Exclusion criteria shall be clearly defined, documented, and disclosed. The ranking entity shall specify:
+排除准则应清晰定义、记录和披露。排名实体应指定：
+1) the activities or sectors excluded;
+   排除的活动或行业；
+2) the revenue threshold for exclusion (e.g., > 5 % revenue from excluded activity);
+   排除的收入门槛（如排除活动收入> 5%）；
+3) the basis for exclusion (norms-based, values-based, or risk-based).
+   排除依据（基于规范、基于价值或基于风险）。
+
+**SE-9.6.1.2 Positive/best-in-class screening | 正面/最优同类筛选**
+
+a) Entities that demonstrate leading ESG performance relative to their sector peers shall be identified and may receive preferential ranking treatment.
+
+相对于行业同行展示领先ESG绩效的实体应识别，并可获得优先排名待遇。
+
+b) Best-in-class assessment shall be conducted within sectors to avoid penalizing sectors with inherently higher ESG risk profiles.
+
+最优同类评估应在行业内进行，以避免惩罚固有ESG风险特征较高的行业。
+
+**SE-9.6.1.3 Thematic investment | 主题投资**
+
+a) The ranking entity may apply enhanced weighting to entities contributing to specific sustainability themes (e.g., clean energy, water access, health equity). Thematic focus shall be disclosed.
+
+排名实体可对贡献特定可持续性主题的实体（如清洁能源、水资源获取、健康公平）应用增强权重。主题聚焦应披露。
+
+**SE-9.6.1.4 Impact investment | 影响力投资**
+
+a) Where the ranking methodology incorporates impact measurement, the ranking entity shall require:
+当排名方法论纳入影响度量时，排名实体应要求：
+1) intentionality — a stated intention to generate positive environmental or social impact;
+   意向性——声明产生积极环境或社会影响的意向；
+2) additionality — impact that would not have occurred without the entity's intervention;
+   额外性——没有实体介入就不会发生的影响；
+3) measurability — quantifiable impact metrics with defined targets and timeframes;
+   可度量性——具有定义目标和时间框架的可量化影响指标；
+4) contribution — evidence that the entity's activities contributed to the measured impact.
+   贡献——实体活动对所测影响有贡献的证据。
+
+### SE-9.6.2 Strategy Consistency | 策略一致性
+
+a) The ranking entity shall apply its stated ESG integration strategy consistently across all entities in the ranking universe. Ad hoc exceptions shall be documented with rationale.
+
+排名实体应在排名范围内所有实体间一致适用其声明的ESG整合策略。临时例外应附依据记录。
+
+b) The ranking entity shall disclose the proportion of entities excluded, promoted, or re-weighted under each strategy.
+
+排名实体应披露在每项策略下被排除、提升或重新加权的实体比例。
+
+---
+
+## SE-9.7 ESG Disclosure Standards Cross-Mapping | ESG信息披露标准交叉映射
+
+### SE-9.7.1 Framework Interoperability | 框架互操作性
+
+a) The ranking entity shall provide a cross-mapping table that maps its indicators to the following disclosure frameworks:
+排名实体应提供将其指标映射到以下披露框架的交叉映射表：
+
+1) GRI Universal Standards (2021) and applicable GRI Topic Standards;
+   GRI通用标准（2021）及适用GRI议题标准；
+2) SASB Industry Standards (for each sector in scope);
+   SASB行业标准（范围内每个行业）；
+3) TCFD Recommendations (four pillars: Governance, Strategy, Risk Management, Metrics & Targets);
+   TCFD建议（四个支柱：治理、战略、风险管理、指标与目标）；
+4) CDP Questionnaire (Climate, Water, Forests);
+   CDP问卷（气候、水、森林）；
+5) EU Taxonomy Regulation (Article 8 disclosure requirements).
+   欧盟分类法条例（第8条披露要求）。
+
+b) The cross-mapping shall indicate for each indicator:
+交叉映射应为每项指标标明：
+1) which framework(s) it maps to;
+   映射到哪些框架；
+2) the mapping quality — direct (1:1), approximate (requires adjustment), or partial (covers only some aspects);
+   映射质量——直接（1:1）、近似（需调整）或部分（仅涵盖部分方面）；
+3) any gaps where the indicator is not covered by any standard framework.
+   指标未被任何标准框架覆盖的任何缺口。
+
+### SE-9.7.2 Disclosure Quality Assessment | 披露质量评估
+
+a) The ranking entity shall assess the quality of entity ESG disclosures, not merely their quantity. Quality dimensions shall include:
+排名实体应评估实体ESG披露的质量，而非仅数量。质量维度应包括：
+
+1) **Completeness** — Coverage of material ESG issues identified by SASB or equivalent industry materiality assessment;
+   完整性——对SASB或等效行业重要性评估识别的重大ESG事项的覆盖；
+
+2) **Accuracy** — Consistency with verified data, absence of material errors;
+   准确性——与验证数据一致、无重大错误；
+
+3) **Timeliness** — Data vintage within acceptable timeframes (per SE-8.6);
+   时效性——数据年限在可接受时间范围内（按SE-8.6）；
+
+4) **Comparability** — Consistent reporting boundaries and methodologies across reporting periods;
+   可比性——报告期之间报告边界和方法论一致；
+
+5) **Verifiability** — Extent of third-party assurance, availability of underlying evidence.
+   可验证性——第三方保证范围、基础证据的可获取性。
+
+b) A disclosure quality score shall be computed and may be used as a data quality modifier in the scoring model (SE-9.8).
+
+应计算披露质量分数，可用作评分模型中的数据质量修正因子（SE-9.8）。
+
+### SE-9.7.3 Convergence and Future Standards | 趋同与未来标准
+
+a) The ranking entity should monitor and incorporate emerging disclosure standards, including:
+排名实体应监测并纳入新兴披露标准，包括：
+1) ISSB Standards (IFRS S1, IFRS S2) — International Sustainability Standards Board global baseline;
+   ISSB标准（IFRS S1、IFRS S2）——国际可持续性准则委员会全球基线；
+2) ESRS (European Sustainability Reporting Standards) under CSRD;
+   CSRD下的ESRS（欧洲可持续性报告标准）；
+3) SEC Climate Disclosure Rule (as adopted).
+   SEC气候披露规则（如已采纳）。
+
+b) Where the ranking entity adopts emerging standards, it shall document the transition approach and provide comparability with prior methodology versions.
+
+当排名实体采纳新兴标准时，应记录过渡方法并提供与先前方法论版本的可比性。
+
+---
+
+## SE-9.8 Scoring and Rating Methodology | 评分与评级方法论
+
+### SE-9.8.1 Scoring Approach | 评分方法
+
+a) ESG scores shall be computed at three levels:
+ESG分数应在三个层面计算：
+
+1) **Issue level** — Individual ESG issues (e.g., carbon emissions, labor safety) scored on a 0–100 scale;
+   议题层面——单个ESG议题（如碳排放、劳工安全）在0–100量表上评分；
+2) **Pillar level** — Pillar scores (E, S, G) as weighted averages of issue scores within each pillar;
+   支柱层面——支柱分数（E、S、G）为各支柱内议题分数的加权平均；
+3) **Overall level** — Overall ESG score as a weighted average of pillar scores.
+   总体层面——总体ESG分数为支柱分数的加权平均。
+
+b) Issue weights shall reflect industry-specific materiality. The ranking entity shall document the materiality assessment methodology, which may be based on SASB, MSCI Key Issue Identification, or an independent assessment.
+
+议题权重应反映行业特定重要性。排名实体应记录重要性评估方法论，可基于SASB、MSCI关键议题识别或独立评估。
+
+### SE-9.8.2 Risk-Based vs. Impact-Based Approaches | 基于风险与基于影响的方法
+
+a) The ranking entity shall declare whether its methodology is primarily:
+排名实体应声明其方法论主要是：
+
+1) **Risk-based** — Assessing ESG factors as financial risk drivers (consistent with investor fiduciary duty interpretation). Scores represent unmanaged risk exposure.
+   基于风险——将ESG因素作为财务风险驱动因素评估（与投资者受托责任解释一致）。分数代表未管理风险敞口。
+
+2) **Impact-based** — Assessing ESG factors as measures of real-world environmental and social impact. Scores represent positive or negative impact magnitude.
+   基于影响——将ESG因素作为现实世界环境和社会影响的度量。分数代表正面或负面影响量级。
+
+3) **Hybrid** — Combining risk and impact dimensions, with documented weighting between the two.
+   混合——结合风险和影响维度，附两者间的记录加权。
+
+b) The choice of approach shall be disclosed and shall be consistent with the stated purpose of the ranking.
+
+方法选择应披露，并与排名声明目的一致。
+
+### SE-9.8.3 Key Issue Methodology (MSCI-Informed) | 关键议题方法论（参考MSCI）
+
+a) Where the ranking entity adopts a key issue approach, it shall:
+当排名实体采纳关键议题方法时，应：
+1) identify a set of key ESG issues for each industry, based on materiality assessment;
+   基于重要性评估为每个行业识别一组关键ESG议题；
+2) weight key issues more heavily than non-key issues in pillar and overall scores;
+   在支柱和总体分数中对关键议题给予比非关键议题更大的权重；
+3) update key issue identification at least annually to reflect evolving ESG risks.
+   至少每年更新关键议题识别以反映ESG风险的演变。
+
+b) The ranking entity shall disclose the key issues identified for each industry and the weighting applied.
+
+排名实体应披露每个行业识别的关键议题及所适用的权重。
+
+### SE-9.8.4 Controvers Assessment | 争议事件评估
+
+a) The ranking entity shall implement a systematic controversy assessment mechanism:
+排名实体应实施系统性争议事件评估机制：
+
+1) Controversial events and allegations shall be identified through media monitoring, NGO reports, regulatory actions, and litigation databases;
+   争议事件和指控应通过媒体监测、NGO报告、监管行动和诉讼数据库识别；
+2) Each controversy shall be assessed for severity (minor, moderate, major, severe) and the entity's response (adequate, partially adequate, inadequate);
+   每项争议应评估严重程度（轻微、中等、重大、严重）和实体回应（充分、部分充分、不充分）；
+3) Active controversies shall result in a controversy modifier applied to the relevant issue score;
+   活跃争议应导致对相关议题分数应用争议修正因子；
+4) The ranking entity shall verify controversy allegations through multiple sources before applying modifiers.
+   排名实体应在应用修正因子前通过多个来源验证争议指控。
+
+b) The controversy assessment methodology shall be documented, including source monitoring scope, severity classification criteria, and modifier calculation.
+
+争议评估方法论应记录，包括来源监测范围、严重程度分类标准和修正因子计算。
+
+---
+
+## SE-9.9 Benchmarking Against Established ESG Ratings | 对标既有ESG评级
+
+### SE-9.9.1 MSCI ESG Ratings | MSCI ESG评级
+
+a) The ranking entity shall document its relationship to the MSCI ESG Ratings methodology, including:
+排名实体应记录与MSCI ESG评级方法论的关系，包括：
+1) MSCI's Key Issues and Weighted Average Score approach;
+   MSCI的关键议题与加权平均分数方法；
+2) MSCI's industry-specific materiality framework;
+   MSCI的行业特定重要性框架；
+3) MSCI's Governance Score treatment (industry-neutral vs. industry-specific).
+   MSCI治理分数处理（行业中性与行业特定）。
+
+b) The ranking entity shall note that MSCI ratings range from AAA to CCC (7-point scale) and shall document its own scale and any mapping to the MSCI scale.
+
+排名实体应指出MSCI评级范围为AAA至CCC（7点量表），并记录其自身量表及与MSCI量表的任何映射。
+
+### SE-9.9.2 Sustainalytics ESG Risk Ratings | Sustainalytics ESG风险评级
+
+a) The ranking entity shall document its relationship to the Sustainalytics Unmanaged Risk framework, including:
+排名实体应记录与Sustainalytics未管理风险框架的关系，包括：
+1) the concept of Unmanaged Risk = Unmanageable Risk + Managed Risk Gap;
+   未管理风险 = 不可管理风险 + 已管理风险缺口概念；
+2) Sustainalytics' risk classification (negligible, low, medium, high, severe);
+   Sustainalytics的风险分类（可忽略、低、中、高、严重）；
+3) Sustainalytics' industry-specific risk exposure assessment.
+   Sustainalytics的行业特定风险敞口评估。
+
+b) Where the ranking entity adopts a risk-based approach, it should consider the Unmanaged Risk framework as a methodological reference for quantifying ESG risk exposure.
+
+当排名实体采纳基于风险的方法时，应考虑未管理风险框架作为量化ESG风险敞口的方法论参考。
+
+---
+
+## SE-9.10 Data Collection and Quality Assurance | 数据收集与质量保证
+
+### SE-9.10.1 Data Sources | 数据来源
+
+a) ESG data shall be collected from the following source hierarchy:
+ESG数据应按以下来源层级收集：
+
+1) **Entity disclosures** — Annual/sustainability reports, regulatory filings, CDP responses;
+   实体披露——年度/可持续性报告、监管申报、CDP回复；
+2) **Alternative data** — Government databases, satellite data, sensor data, patent databases, media monitoring;
+   替代数据——政府数据库、卫星数据、传感器数据、专利数据库、媒体监测；
+3) **Third-party ESG data providers** — With documented methodology and coverage;
+   第三方ESG数据提供方——附有方法论和覆盖范围说明；
+4) **Estimates and models** — Only with documented methodology and quality indicators.
+   估算与模型——仅附有方法论和质量指标。
+
+b) The ranking entity shall disclose the proportion of data from each source type and the data coverage rate for each indicator.
+
+排名实体应披露各来源类型的数据比例及每项指标的数据覆盖率。
+
+### SE-9.10.2 Data Quality Assurance | 数据质量保证
+
+a) The ranking entity shall implement data quality assurance procedures, including:
+排名实体应实施数据质量保证程序，包括：
+1) automated consistency checks (internal data logic validation);
+   自动一致性检查（内部数据逻辑验证）；
+2) cross-source verification for material indicators;
+   重大指标的跨源验证；
+3) outlier detection and investigation;
+   异常值检测与调查；
+4) time-series consistency validation.
+   时间序列一致性验证。
+
+b) Data quality shall be quantified as a data quality score that feeds into the scoring model as specified in SE-9.8.
+
+数据质量应量化为数据质量分数，按SE-9.8规定纳入评分模型。
+
+---
+
+## SE-9.11 Publication and Transparency | 发布与透明性
+
+### SE-9.11.1 Methodology Disclosure | 方法论披露
+
+a) The ranking entity shall publish a complete methodology document, including:
+排名实体应发布完整的方法论文件，包括：
+1) all indicators with definitions, data sources, and calculation methods;
+   所有指标及其定义、数据来源和计算方法；
+2) pillar and issue weights with rationale (including industry-specific materiality assessment);
+   支柱与议题权重及依据（包括行业特定重要性评估）；
+3) scoring and normalization procedures;
+   评分与归一化程序；
+4) ESG integration strategy (SE-9.6);
+   ESG整合策略（SE-9.6）；
+5) controversy assessment methodology (SE-9.8.4);
+   争议评估方法论（SE-9.8.4）；
+6) cross-framework mapping (SE-9.7);
+   跨框架映射（SE-9.7）；
+7) data quality assurance methodology (SE-9.10).
+   数据质量保证方法论（SE-9.10）。
+
+b) The methodology document shall comply with the IOSCO ESG Ratings and Data Products Providers Statement (2021) recommendations for transparency.
+
+方法论文件应符合国际证监组织ESG评级与数据产品提供方声明（2021）的透明性建议。
+
+### SE-9.11.2 Results Presentation | 结果呈现
+
+a) Published results shall include, for each ranked entity:
+发布结果应包括每个排名实体的以下信息：
+1) overall ESG score and rating;
+   总体ESG分数与评级；
+2) pillar scores (E, S, G) and key issue scores;
+   支柱分数（E、S、G）和关键议题分数；
+3) industry classification and peer group;
+   行业分类与同行组；
+4) data quality assessment and coverage indicators;
+   数据质量评估与覆盖指标；
+5) active controversy flags;
+   活跃争议标记；
+6) ESG integration strategy effects (exclusions, re-weighting).
+   ESG整合策略效果（排除、重新加权）。
+
+b) The ranking entity should provide historical score trajectories to enable trend analysis.
+
+排名实体应提供历史分数轨迹以支持趋势分析。
+
+---
+
+> **Note**: This extension module is part of ICO Std 2002 (Tianji Ranking Methodology Standard). It is complementary to SE-08 (Sustainability): SE-08 evaluates absolute sustainability performance relative to planetary boundaries, while SE-09 evaluates enterprise-level ESG risk management and opportunity capture. ESG ratings carry significant financial and reputational consequences. The requirements in this module are designed to ensure methodological rigor, cross-framework interoperability, and transparency in accordance with IOSCO guidance. Implementation of this module shall be validated by the SE-09 Working Group with participation from ESG analysts, financial materiality specialists, and disclosure framework experts.
+
+> **注意**：本扩展模块属于 ICO Std 2002（天机排名方法论标准）。它与SE-08（可持续性）互补：SE-08评估相对于行星边界的绝对可持续性绩效，而SE-09评估企业级ESG风险管理和机会捕获。ESG评级具有重大财务和声誉后果。本模块的要求旨在确保按照IOSCO指导实现方法论严谨性、跨框架互操作性和透明性。本模块的实施应由SE-09工作组验证，工作组应包括ESG分析师、财务重要性专家和披露框架专家。
