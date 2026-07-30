@@ -66,7 +66,7 @@ g) GB/T 10781.2 — Baijiu of light aroma type (清香型白酒);
 
 h) GB/T 10781.3 — Baijiu of rice aroma type (米香型白酒);
 
-i) GB/T 27588 — Baijiu of phoenix aroma type (凤香型白酒);
+i) GB/T 19598 — Baijiu of phoenix aroma type (凤香型白酒);
 
 j) GB/T 23547 — Baijiu of mixed aroma type (兼香型白酒);
 
@@ -521,7 +521,7 @@ c) **Light Aroma (清香型)**: Dominated by ethyl acetate (乙酸乙酯). Clean
 
 d) **Rice Aroma (米香型)**: Derived from rice-based fermentation with small rice wine (小曲). Light, elegant rice fragrance with a clean, slightly sweet palate. Key production area: Guangxi (Guilin). Reference standard: GB/T 10781.3.
 
-e) **Phoenix Aroma (凤香型)**: A distinctive style using a blend of high-temperature and low-temperature qu, fermented in mud-and-stone pits. Combines characteristics of strong and light aroma types. Key production area: Shaanxi (Fengxiang). Reference standard: GB/T 27588.
+e) **Phoenix Aroma (凤香型)**: A distinctive style using a blend of high-temperature and low-temperature qu, fermented in mud-and-stone pits. Combines characteristics of strong and light aroma types. Key production area: Shaanxi (Fengxiang). Reference standard: GB/T 19598.
 
 f) **Mixed Aroma (兼香型)**: Combines characteristics of two or more primary aroma types, most commonly strong and sauce aromas. Multi-layered aroma with a complex palate. Key production areas: Hubei, Anhui. Reference standard: GB/T 23547.
 
