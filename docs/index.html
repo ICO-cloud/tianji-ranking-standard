@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICO Std 2002 — Tianji Ranking Methodology Standard</title>
+    <title>ICO Std 2002:2026 — Tianji Ranking Methodology Standard</title>
     <style>
         :root {
             --ico-primary: #1a5276;
@@ -13,6 +13,9 @@
             --ico-border: #d5dbdb;
             --ico-text: #2c3e50;
             --ico-light: #eaf2f8;
+            --ico-muted: #7f8c8d;
+            --ico-white: #ffffff;
+            --ico-shadow: rgba(0,0,0,0.08);
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -21,150 +24,666 @@
             background: var(--ico-bg);
             line-height: 1.6;
         }
-        .container { max-width: 900px; margin: 0 auto; padding: 2rem; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 2rem; }
+
+        /* ── Header ── */
         header {
             background: var(--ico-primary);
-            color: white;
-            padding: 2.5rem 0;
-            margin-bottom: 2rem;
+            color: var(--ico-white);
+            padding: 3rem 0 2.5rem;
         }
-        header .container { display: flex; align-items: center; justify-content: space-between; }
-        header h1 { font-size: 1.6rem; font-weight: 600; }
-        header .subtitle { font-size: 0.95rem; opacity: 0.85; margin-top: 0.3rem; }
-        header .badge {
+        header .container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+        .header-identity h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+        .header-identity .std-number {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+        .header-identity .std-name-en {
+            font-size: 1rem;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-top: 0.3rem;
+        }
+        .header-identity .std-name-cn {
+            font-size: 0.9rem;
+            font-weight: 400;
+            opacity: 0.7;
+            margin-top: 0.15rem;
+        }
+        .header-meta {
+            text-align: right;
+            flex-shrink: 0;
+        }
+        .badge-draft {
+            display: inline-block;
             background: var(--ico-accent);
             color: #fff;
-            padding: 0.25rem 0.75rem;
-            border-radius: 4px;
+            padding: 0.3rem 1rem;
+            border-radius: 3px;
             font-size: 0.8rem;
-            font-weight: 600;
-            white-space: nowrap;
+            font-weight: 700;
+            letter-spacing: 0.1em;
         }
-        .section { margin-bottom: 2rem; }
+        .header-meta .meta-line {
+            font-size: 0.82rem;
+            opacity: 0.75;
+            margin-top: 0.5rem;
+            line-height: 1.5;
+        }
+
+        /* ── Sections ── */
+        .section { margin: 2.5rem 0; }
         .section h2 {
             font-size: 1.25rem;
             color: var(--ico-primary);
             border-bottom: 2px solid var(--ico-secondary);
             padding-bottom: 0.4rem;
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
         }
-        .section h2 .cn { color: var(--ico-secondary); font-weight: 400; font-size: 1rem; margin-left: 0.5rem; }
+        .section h2 .cn {
+            color: var(--ico-secondary);
+            font-weight: 400;
+            font-size: 1rem;
+            margin-left: 0.5rem;
+        }
+
+        /* ── Standard Overview ── */
+        .overview-text {
+            font-size: 0.95rem;
+            line-height: 1.75;
+            max-width: 780px;
+        }
+        .overview-text p { margin-bottom: 0.8rem; }
+        .overview-text strong { color: var(--ico-primary); }
+
+        /* ── Quick Navigation Cards ── */
+        .quick-nav {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        .nav-card {
+            border: 1px solid var(--ico-border);
+            border-top: 3px solid var(--ico-secondary);
+            border-radius: 4px;
+            padding: 1.25rem 1.25rem 1rem;
+            background: var(--ico-white);
+            text-decoration: none;
+            color: var(--ico-text);
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+        .nav-card:hover {
+            box-shadow: 0 3px 12px var(--ico-shadow);
+            border-top-color: var(--ico-accent);
+        }
+        .nav-card .nav-audience {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--ico-secondary);
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+        .nav-card .nav-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+        .nav-card .nav-cn {
+            font-size: 0.85rem;
+            color: var(--ico-muted);
+        }
+        .nav-card .nav-desc {
+            font-size: 0.82rem;
+            color: var(--ico-muted);
+            margin-top: 0.6rem;
+            line-height: 1.5;
+        }
+        .nav-card .nav-target {
+            display: inline-block;
+            margin-top: 0.6rem;
+            font-size: 0.8rem;
+            color: var(--ico-secondary);
+            font-weight: 500;
+        }
+
+        /* ── Chapter Group ── */
+        .chapter-group { margin-bottom: 1.5rem; }
+        .chapter-group-title {
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--ico-muted);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            padding-left: 1rem;
+        }
         .chapter-list { list-style: none; }
         .chapter-list li {
-            padding: 0.6rem 1rem;
+            padding: 0.7rem 1rem;
             border-left: 3px solid var(--ico-border);
-            margin-bottom: 0.3rem;
-            transition: border-color 0.2s;
+            margin-bottom: 0.15rem;
+            transition: border-color 0.2s, background 0.2s;
         }
-        .chapter-list li:hover { border-left-color: var(--ico-secondary); background: var(--ico-light); }
+        .chapter-list li:hover {
+            border-left-color: var(--ico-secondary);
+            background: var(--ico-light);
+        }
         .chapter-list a {
             text-decoration: none;
             color: var(--ico-text);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: block;
         }
         .chapter-list a:hover { color: var(--ico-secondary); }
-        .chapter-list .num { font-weight: 600; color: var(--ico-primary); margin-right: 0.5rem; }
-        .chapter-list .cn-title { color: #7f8c8d; font-size: 0.9rem; }
+        .chapter-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 1rem;
+        }
+        .chapter-title-line {
+            display: flex;
+            align-items: baseline;
+            gap: 0.35rem;
+        }
+        .num {
+            font-weight: 700;
+            color: var(--ico-primary);
+            min-width: 1.6em;
+        }
+        .cn-title { color: var(--ico-muted); font-size: 0.88rem; }
+        .chapter-desc {
+            font-size: 0.82rem;
+            color: var(--ico-muted);
+            margin-top: 0.2rem;
+            padding-left: 2rem;
+            line-height: 1.5;
+        }
+
+        /* ── Extension Grid ── */
         .ext-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 0.8rem;
         }
         .ext-card {
             border: 1px solid var(--ico-border);
             border-radius: 6px;
-            padding: 1rem;
-            background: white;
+            padding: 1rem 1.1rem;
+            background: var(--ico-white);
             transition: box-shadow 0.2s;
         }
-        .ext-card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        .ext-card .ext-num { font-size: 0.8rem; color: var(--ico-accent); font-weight: 700; }
-        .ext-card .ext-title { font-weight: 600; margin: 0.3rem 0; }
-        .ext-card .ext-cn { font-size: 0.85rem; color: #7f8c8d; }
+        .ext-card:hover { box-shadow: 0 2px 8px var(--ico-shadow); }
+        .ext-card .ext-num {
+            font-size: 0.78rem;
+            color: var(--ico-accent);
+            font-weight: 700;
+            letter-spacing: 0.04em;
+        }
+        .ext-card .ext-title { font-weight: 600; margin: 0.25rem 0; }
+        .ext-card .ext-cn { font-size: 0.85rem; color: var(--ico-muted); }
+        .ext-card .ext-desc {
+            font-size: 0.8rem;
+            color: var(--ico-muted);
+            margin-top: 0.4rem;
+            line-height: 1.45;
+        }
         .ext-card a { text-decoration: none; color: inherit; }
+
+        /* ── Annex List ── */
         .annex-list { list-style: none; }
-        .annex-list li { padding: 0.5rem 0; }
-        .annex-list a { text-decoration: none; color: var(--ico-secondary); font-weight: 500; }
+        .annex-list li {
+            padding: 0.7rem 0;
+            border-bottom: 1px solid var(--ico-border);
+        }
+        .annex-list li:last-child { border-bottom: none; }
+        .annex-list a {
+            text-decoration: none;
+            color: var(--ico-secondary);
+            font-weight: 600;
+        }
         .annex-list a:hover { text-decoration: underline; }
-        .annex-list .cn { color: #7f8c8d; font-weight: 400; }
+        .annex-list .cn { color: var(--ico-muted); font-weight: 400; }
+        .annex-desc {
+            font-size: 0.82rem;
+            color: var(--ico-muted);
+            margin-top: 0.2rem;
+            line-height: 1.45;
+        }
+
+        /* ── Standards Relationship ── */
+        .rel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 0.8rem;
+        }
+        .rel-card {
+            border: 1px solid var(--ico-border);
+            border-left: 3px solid var(--ico-primary);
+            border-radius: 4px;
+            padding: 0.9rem 1rem;
+            background: var(--ico-white);
+        }
+        .rel-card .rel-name {
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: var(--ico-primary);
+        }
+        .rel-card .rel-cn {
+            font-size: 0.82rem;
+            color: var(--ico-muted);
+        }
+        .rel-card .rel-desc {
+            font-size: 0.8rem;
+            color: var(--ico-muted);
+            margin-top: 0.3rem;
+            line-height: 1.45;
+        }
+
+        /* ── Footer ── */
         footer {
             border-top: 1px solid var(--ico-border);
             margin-top: 3rem;
-            padding: 1.5rem 0;
+            padding: 2rem 0;
+        }
+        footer .container {
             text-align: center;
-            color: #7f8c8d;
-            font-size: 0.85rem;
+            color: var(--ico-muted);
+            font-size: 0.82rem;
+            line-height: 1.8;
+        }
+        footer a { color: var(--ico-secondary); text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+        .footer-wip {
+            margin-top: 0.6rem;
+            font-style: italic;
+            color: var(--ico-muted);
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .quick-nav { grid-template-columns: 1fr; }
+            .ext-grid { grid-template-columns: 1fr 1fr; }
+            .rel-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 600px) {
-            header .container { flex-direction: column; text-align: center; }
-            header .badge { margin-top: 0.5rem; }
+            header .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-meta { text-align: center; margin-top: 0.5rem; }
+            .ext-grid { grid-template-columns: 1fr; }
+            .chapter-row { flex-direction: column; gap: 0.1rem; }
+            .chapter-desc { padding-left: 0; }
         }
     </style>
 </head>
 <body>
+
+    <!-- ════════════ HEADER ════════════ -->
     <header>
         <div class="container">
-            <div>
-                <h1>ICO Std 2002: Ranking Methodology Standard</h1>
-                <div class="subtitle">天机排名方法论标准 · Tianji Ranking Methodology Standard</div>
+            <div class="header-identity">
+                <div class="std-number">International Standard</div>
+                <h1>ICO Std 2002:2026</h1>
+                <div class="std-name-en">Ranking Methodology Standard</div>
+                <div class="std-name-cn">天机排名方法论标准</div>
             </div>
-            <span class="badge">DRAFT</span>
+            <div class="header-meta">
+                <span class="badge-draft">DRAFT</span>
+                <div class="meta-line">International Communication Organization (ICO)</div>
+                <div class="meta-line">Edition 1.0 &middot; 2026-07</div>
+            </div>
         </div>
     </header>
 
     <div class="container">
-        <div class="section">
-            <h2>Core Specification <span class="cn">核心规范</span></h2>
-            <ul class="chapter-list">
-                <li><a href="core/00-preface.html"><span><span class="num">0</span> Preface</span><span class="cn-title">前言</span></a></li>
-                <li><a href="core/01-scope.html"><span><span class="num">1</span> Scope</span><span class="cn-title">范围</span></a></li>
-                <li><a href="core/02-normative-references.html"><span><span class="num">2</span> Normative References</span><span class="cn-title">规范性引用文件</span></a></li>
-                <li><a href="core/03-terms.html"><span><span class="num">3</span> Terms and Definitions</span><span class="cn-title">术语和定义</span></a></li>
-                <li><a href="core/04-principles.html"><span><span class="num">4</span> General Principles</span><span class="cn-title">通用原则</span></a></li>
-                <li><a href="core/05-indicator-design.html"><span><span class="num">5</span> Indicator System Design</span><span class="cn-title">指标体系设计</span></a></li>
-                <li><a href="core/06-weighting-rules.html"><span><span class="num">6</span> Weighting Rules</span><span class="cn-title">权重分配规则</span></a></li>
-                <li><a href="core/07-data-collection.html"><span><span class="num">7</span> Data Collection Specifications</span><span class="cn-title">数据采集规范</span></a></li>
-                <li><a href="core/08-scoring-ranking.html"><span><span class="num">8</span> Scoring and Ranking Methods</span><span class="cn-title">评分与排序方法</span></a></li>
-                <li><a href="core/09-publication-transparency.html"><span><span class="num">9</span> Result Publication and Transparency</span><span class="cn-title">结果发布与透明度</span></a></li>
-                <li><a href="core/10-audit-traceability.html"><span><span class="num">10</span> Audit and Traceability</span><span class="cn-title">审计与可追溯性</span></a></li>
-                <li><a href="core/11-compliance.html"><span><span class="num">11</span> Compliance Declaration and Certification</span><span class="cn-title">合规性声明与认证</span></a></li>
-            </ul>
-        </div>
 
+        <!-- ════════════ STANDARD OVERVIEW ════════════ -->
         <div class="section">
-            <h2>Domain Extensions <span class="cn">领域扩展</span></h2>
-            <div class="ext-grid">
-                <div class="ext-card"><a href="extensions/SE-01-products.html"><div class="ext-num">SE-01</div><div class="ext-title">Product Quality</div><div class="ext-cn">产品品质</div></a></div>
-                <div class="ext-card"><a href="extensions/SE-02-brand-value.html"><div class="ext-num">SE-02</div><div class="ext-title">Brand Value</div><div class="ext-cn">品牌价值</div></a></div>
-                <div class="ext-card"><a href="extensions/SE-03-service-quality.html"><div class="ext-num">SE-03</div><div class="ext-title">Service Quality</div><div class="ext-cn">服务质量</div></a></div>
-                <div class="ext-card"><a href="extensions/SE-04-tech-innovation.html"><div class="ext-num">SE-04</div><div class="ext-title">Technology Innovation</div><div class="ext-cn">技术创新</div></a></div>
-                <div class="ext-card"><a href="extensions/SE-05-cultural-heritage.html"><div class="ext-num">SE-05</div><div class="ext-title">Cultural Heritage & ICH</div><div class="ext-cn">文化遗产与非遗</div></a></div>
-                <div class="ext-card"><a href="extensions/SE-06-restaurant.html"><div class="ext-num">SE-06</div><div class="ext-title">Restaurants & Gastronomy</div><div class="ext-cn">餐厅与美食</div></a></div>
-                <div class="ext-card"><a href="extensions/SE-07-education.html"><div class="ext-num">SE-07</div><div class="ext-title">Education & Academia</div><div class="ext-cn">教育与学术</div></a></div>
-                <div class="ext-card"><a href="extensions/SE-08-sustainability.html"><div class="ext-num">SE-08</div><div class="ext-title">Sustainability</div><div class="ext-cn">可持续发展</div></a></div>
-                <div class="ext-card"><a href="extensions/SE-09-esg.html"><div class="ext-num">SE-09</div><div class="ext-title">ESG</div><div class="ext-cn">综合ESG评价</div></a></div>
-                <div class="ext-card"><a href="extensions/SE-10-tourist-attractions.html"><div class="ext-num">SE-10</div><div class="ext-title">Tourist Attractions</div><div class="ext-cn">景区排名</div></a></div>
+            <h2>Standard Overview <span class="cn">标准概述</span></h2>
+            <div class="overview-text">
+                <p>
+                    <strong>ICO Std 2002:2026</strong> is the world's first international standard to cover the full lifecycle of ranking methodology — from indicator design and data collection through scoring, publication, and audit. It provides a universal, domain-independent framework ensuring that all ranking systems conform to consistent principles of rigour, transparency, and reproducibility.
+                </p>
+                <p>
+                    本标准是全球首个覆盖排名方法论全流程的国际标准，从指标设计与数据采集到评分发布和审计追溯，提供领域无关的通用框架，确保所有排名系统遵循严谨性、透明度和可复现性的一致原则。本标准对标IREG柏林原则和ISO体系，为排名行业建立国际化的方法论基准。
+                </p>
+                <p>
+                    ICO Std 2002 works in concert with <strong>ICO Std 2001 (DPP-CQ)</strong>, the Digital Product Passport — Computational Quality standard. While ICO Std 2001 governs the quality of data inputs, ICO Std 2002 governs the methodological integrity of how those inputs are transformed into ranking outcomes. Together, they form a comprehensive quality assurance chain from data to decision.
+                </p>
             </div>
         </div>
 
+        <!-- ════════════ QUICK NAVIGATION ════════════ -->
         <div class="section">
+            <h2>Quick Navigation <span class="cn">快速导航</span></h2>
+            <div class="quick-nav">
+                <a class="nav-card" href="#core-specification">
+                    <div class="nav-audience">For Ranking Practitioners</div>
+                    <div class="nav-title">Core Methodology</div>
+                    <div class="nav-cn">核心方法论</div>
+                    <div class="nav-desc">Principles, indicator design, weighting, data collection, and scoring methods — the essential technical framework.</div>
+                    <div class="nav-target">→ Core Specification (Ch 4–8)</div>
+                </a>
+                <a class="nav-card" href="#domain-extensions">
+                    <div class="nav-audience">For Domain Specialists</div>
+                    <div class="nav-title">Domain Extensions</div>
+                    <div class="nav-cn">领域扩展</div>
+                    <div class="nav-desc">Sector-specific adaptations covering products, brands, services, education, heritage, ESG, and more.</div>
+                    <div class="nav-target">→ Extensions (SE-01–SE-10)</div>
+                </a>
+                <a class="nav-card" href="#annexes">
+                    <div class="nav-audience">For Auditors &amp; Policymakers</div>
+                    <div class="nav-title">Compliance &amp; Audit</div>
+                    <div class="nav-cn">合规与审计</div>
+                    <div class="nav-desc">Transparency requirements, audit frameworks, compliance certification, and reference mappings to existing international standards.</div>
+                    <div class="nav-target">→ Ch 9–11 &amp; Annexes</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ════════════ CORE SPECIFICATION ════════════ -->
+        <div class="section" id="core-specification">
+            <h2>Core Specification <span class="cn">核心规范</span></h2>
+
+            <div class="chapter-group">
+                <div class="chapter-group-title">Foundational Framework &middot; 基础框架</div>
+                <ul class="chapter-list">
+                    <li>
+                        <a href="core/00-preface.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">0</span> Preface</span>
+                                <span class="cn-title">前言</span>
+                            </div>
+                            <div class="chapter-desc">Background and motivation for the standard — the proliferation of ranking systems and the lack of methodological consistency in the global ranking landscape.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="core/01-scope.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">1</span> Scope</span>
+                                <span class="cn-title">范围</span>
+                            </div>
+                            <div class="chapter-desc">General requirements for ranking methodology applicable to any organisation; establishes a universal, domain-independent methodological framework.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="core/02-normative-references.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">2</span> Normative References</span>
+                                <span class="cn-title">规范性引用文件</span>
+                            </div>
+                            <div class="chapter-desc">Indispensable referenced documents including the IREG Berlin Principles, ISO standards, and other normative instruments.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="core/03-terms.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">3</span> Terms and Definitions</span>
+                                <span class="cn-title">术语和定义</span>
+                            </div>
+                            <div class="chapter-desc">Core terminology and definitions used throughout the standard, aligned with ISO and IEC terminological databases.</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="chapter-group">
+                <div class="chapter-group-title">Methodology Core &middot; 方法论核心</div>
+                <ul class="chapter-list">
+                    <li>
+                        <a href="core/04-principles.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">4</span> General Principles</span>
+                                <span class="cn-title">通用原则</span>
+                            </div>
+                            <div class="chapter-desc">Fundamental principles governing all ranking methodologies — independence, fairness, transparency, and reproducibility as the normative foundation.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="core/05-indicator-design.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">5</span> Indicator System Design</span>
+                                <span class="cn-title">指标体系设计</span>
+                            </div>
+                            <div class="chapter-desc">Requirements for indicator selection, hierarchical organisation, validity verification, initial weight assignment, and update mechanisms.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="core/06-weighting-rules.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">6</span> Weighting Rules</span>
+                                <span class="cn-title">权重分配规则</span>
+                            </div>
+                            <div class="chapter-desc">Methods, procedures and requirements for weight determination, sensitivity analysis, disclosure, and cross-domain weight coordination.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="core/07-data-collection.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">7</span> Data Collection Specifications</span>
+                                <span class="cn-title">数据采集规范</span>
+                            </div>
+                            <div class="chapter-desc">Comprehensive data governance framework: three-tier source classification, processing, quality assurance, ethical compliance, and archival.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="core/08-scoring-ranking.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">8</span> Scoring and Ranking Methods</span>
+                                <span class="cn-title">评分与排序方法</span>
+                            </div>
+                            <div class="chapter-desc">Scoring, normalisation, aggregation and ranking methods; handling of ties and uncertainty; verification and standard publication format.</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="chapter-group">
+                <div class="chapter-group-title">Transparency &amp; Compliance &middot; 透明度与合规</div>
+                <ul class="chapter-list">
+                    <li>
+                        <a href="core/09-publication-transparency.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">9</span> Result Publication and Transparency</span>
+                                <span class="cn-title">结果发布与透明度</span>
+                            </div>
+                            <div class="chapter-desc">Publication requirements, methodological transparency, stakeholder communication, and historical data preservation; aligned with IREG Berlin Principles.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="core/10-audit-traceability.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">10</span> Audit and Traceability</span>
+                                <span class="cn-title">审计与可追溯性</span>
+                            </div>
+                            <div class="chapter-desc">Internal and external audit framework, traceability from results to original data, data version control, and ISO/IEC 17021 alignment.</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="core/11-compliance.html">
+                            <div class="chapter-row">
+                                <span class="chapter-title-line"><span class="num">11</span> Compliance Declaration and Certification</span>
+                                <span class="cn-title">合规性声明与认证</span>
+                            </div>
+                            <div class="chapter-desc">Three compliance levels, self-assessment and third-party certification processes, and the relationship with ICO Std 2001 (DPP-CQ).</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ════════════ DOMAIN EXTENSIONS ════════════ -->
+        <div class="section" id="domain-extensions">
+            <h2>Domain Extensions <span class="cn">领域扩展</span></h2>
+            <div class="ext-grid">
+                <div class="ext-card">
+                    <a href="extensions/SE-01-products.html">
+                        <div class="ext-num">SE-01</div>
+                        <div class="ext-title">Product Quality</div>
+                        <div class="ext-cn">产品品质</div>
+                        <div class="ext-desc">Ranking consumer products with anti-fraud mechanisms, composite scoring of objective testing and subjective experience.</div>
+                    </a>
+                </div>
+                <div class="ext-card">
+                    <a href="extensions/SE-02-brand-value.html">
+                        <div class="ext-num">SE-02</div>
+                        <div class="ext-title">Brand Value</div>
+                        <div class="ext-cn">品牌价值</div>
+                        <div class="ext-desc">Integrating financial metrics with perceptual indicators; aligned with ISO 10668 and ISO 20671 frameworks.</div>
+                    </a>
+                </div>
+                <div class="ext-card">
+                    <a href="extensions/SE-03-service-quality.html">
+                        <div class="ext-num">SE-03</div>
+                        <div class="ext-title">Service Quality</div>
+                        <div class="ext-cn">服务质量</div>
+                        <div class="ext-desc">SERVQUAL adaptation for rankings, customer satisfaction index (CSI), and service blueprinting protocols.</div>
+                    </a>
+                </div>
+                <div class="ext-card">
+                    <a href="extensions/SE-04-tech-innovation.html">
+                        <div class="ext-num">SE-04</div>
+                        <div class="ext-title">Technology Innovation</div>
+                        <div class="ext-cn">技术创新</div>
+                        <div class="ext-desc">Innovation capability assessment with Technology Readiness Level (TRL) mapping; aligned with ISO 56002 and the Oslo Manual.</div>
+                    </a>
+                </div>
+                <div class="ext-card">
+                    <a href="extensions/SE-05-cultural-heritage.html">
+                        <div class="ext-num">SE-05</div>
+                        <div class="ext-title">Cultural Heritage &amp; ICH</div>
+                        <div class="ext-cn">文化遗产与非遗</div>
+                        <div class="ext-desc">Tangible and intangible heritage evaluation with community participation and conservation framework alignment.</div>
+                    </a>
+                </div>
+                <div class="ext-card">
+                    <a href="extensions/SE-06-restaurant.html">
+                        <div class="ext-num">SE-06</div>
+                        <div class="ext-title">Restaurants &amp; Gastronomy</div>
+                        <div class="ext-cn">餐厅与美食</div>
+                        <div class="ext-desc">Culinary assessment methodology balancing subjective sensory experience, cultural context, and temporal consistency.</div>
+                    </a>
+                </div>
+                <div class="ext-card">
+                    <a href="extensions/SE-07-education.html">
+                        <div class="ext-num">SE-07</div>
+                        <div class="ext-title">Education &amp; Academia</div>
+                        <div class="ext-cn">教育与学术</div>
+                        <div class="ext-desc">Educational rankings with enhanced methodological rigour, peer review mechanisms, and educational equity provisions.</div>
+                    </a>
+                </div>
+                <div class="ext-card">
+                    <a href="extensions/SE-08-sustainability.html">
+                        <div class="ext-num">SE-08</div>
+                        <div class="ext-title">Sustainability</div>
+                        <div class="ext-cn">可持续发展</div>
+                        <div class="ext-desc">Environmental performance within planetary boundaries; greenwashing detection and sustainability claim verification.</div>
+                    </a>
+                </div>
+                <div class="ext-card">
+                    <a href="extensions/SE-09-esg.html">
+                        <div class="ext-num">SE-09</div>
+                        <div class="ext-title">ESG</div>
+                        <div class="ext-cn">综合ESG评价</div>
+                        <div class="ext-desc">Enterprise-level ESG assessment with E/S/G pillar structure and cross-framework disclosure mapping for investors and regulators.</div>
+                    </a>
+                </div>
+                <div class="ext-card">
+                    <a href="extensions/SE-10-tourist-attractions.html">
+                        <div class="ext-num">SE-10</div>
+                        <div class="ext-title">Tourist Attractions</div>
+                        <div class="ext-cn">景区排名</div>
+                        <div class="ext-desc">Attraction evaluation with classification-based weighting, seasonal adjustment, and conservation-access balance.</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ════════════ ANNEXES ════════════ -->
+        <div class="section" id="annexes">
             <h2>Annexes <span class="cn">附录</span></h2>
             <ul class="annex-list">
-                <li><a href="annex/A-berlin-principles-mapping.html">Annex A: IREG Berlin Principles Mapping</a> <span class="cn">IREG柏林原则对照表</span></li>
-                <li><a href="annex/B-iso-alignment.html">Annex B: ISO Standards Alignment</a> <span class="cn">ISO标准对齐说明</span></li>
-                <li><a href="annex/C-examples.html">Annex C: Application Examples</a> <span class="cn">应用示例</span></li>
+                <li>
+                    <a href="annex/A-berlin-principles-mapping.html">Annex A: IREG Berlin Principles Mapping</a> <span class="cn">IREG柏林原则对照表</span>
+                    <div class="annex-desc">Detailed mapping between the IREG Berlin Principles (2006/2016) and ICO Std 2002, identifying alignment and areas of extension beyond Berlin requirements.</div>
+                </li>
+                <li>
+                    <a href="annex/B-iso-alignment.html">Annex B: ISO Standards Alignment</a> <span class="cn">ISO标准对齐说明</span>
+                    <div class="annex-desc">Systematic alignment with ISO standards, terminology cross-reference table, and compliance mutual recognition pathways.</div>
+                </li>
+                <li>
+                    <a href="annex/C-examples.html">Annex C: Application Examples</a> <span class="cn">应用示例</span>
+                    <div class="annex-desc">Illustrative examples applying the standard across different ranking domains, walking through the complete ranking lifecycle.</div>
+                </li>
             </ul>
         </div>
+
+        <!-- ════════════ STANDARDS RELATIONSHIP ════════════ -->
+        <div class="section">
+            <h2>Standards Relationship <span class="cn">标准关系</span></h2>
+            <p style="font-size:0.92rem;color:var(--ico-muted);margin-bottom:1rem;max-width:760px;">
+                ICO Std 2002 is designed to integrate with and extend existing international standards and frameworks. The diagram below summarises the key relationships.
+            </p>
+            <div class="rel-grid">
+                <div class="rel-card">
+                    <div class="rel-name">ICO Std 2001 (DPP-CQ)</div>
+                    <div class="rel-cn">数字产品护照 — 计算质量</div>
+                    <div class="rel-desc">Governs data quality inputs; ICO Std 2002 governs methodological integrity. Together they form a quality assurance chain from data to ranking outcome.</div>
+                </div>
+                <div class="rel-card">
+                    <div class="rel-name">IREG Berlin Principles</div>
+                    <div class="rel-cn">IREG柏林原则</div>
+                    <div class="rel-desc">16 principles for university ranking transparency; ICO Std 2002 aligns with and extends these principles to all ranking domains.</div>
+                </div>
+                <div class="rel-card">
+                    <div class="rel-name">ISO 20671 / ISO 10668</div>
+                    <div class="rel-cn">品牌评价标准</div>
+                    <div class="rel-desc">Brand evaluation frameworks; ICO Std 2002 provides ranking-specific operationalisation aligned with their conceptual structures.</div>
+                </div>
+                <div class="rel-card">
+                    <div class="rel-name">ISO 8000</div>
+                    <div class="rel-cn">数据质量标准</div>
+                    <div class="rel-desc">Data quality management; ICO Std 2002's three-tier data source classification and quality assurance provisions align with ISO 8000 principles.</div>
+                </div>
+                <div class="rel-card">
+                    <div class="rel-name">UN Sustainable Development Goals</div>
+                    <div class="rel-cn">联合国可持续发展目标</div>
+                    <div class="rel-desc">Sustainability and ESG extensions (SE-08, SE-09) are designed to support SDG-aligned assessment and reporting.</div>
+                </div>
+                <div class="rel-card">
+                    <div class="rel-name">UNESCO ICH Convention</div>
+                    <div class="rel-cn">教科文组织非遗公约</div>
+                    <div class="rel-desc">The Cultural Heritage extension (SE-05) aligns with the 2003 Convention for the Safeguarding of Intangible Cultural Heritage.</div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
+    <!-- ════════════ FOOTER ════════════ -->
     <footer>
         <div class="container">
-            &copy; 2026 International Communication Organization (ICO) &middot;
-            ICO Std 2002: Ranking Methodology Standard &middot;
-            <a href="https://github.com/ICO-cloud/tianji-ranking-standard" style="color: var(--ico-secondary);">GitHub</a>
+            &copy; 2026 International Communication Organization (ICO). All rights reserved.<br>
+            ICO Std 2002:2026 — Ranking Methodology Standard &middot;
+            <a href="https://github.com/ICO-cloud/tianji-ranking-standard">GitHub Repository</a> &middot;
+            Licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a>
+            <div class="footer-wip">This standard is a work in progress. Feedback and contributions are welcome.</div>
         </div>
     </footer>
+
 </body>
 </html>
