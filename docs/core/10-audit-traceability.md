@@ -382,7 +382,7 @@ d) **Follow-up**: The auditor shall verify the effectiveness of corrective actio
 
 ## 10.4 DPP-CQ Integration
 
-This section specifies the integration between the traceability provisions of this chapter and ICO Std 2001 (Digital Product Passport — Computational Quality, DPP-CQ). The DPP-CQ framework provides a standardised mechanism for attaching cryptographic proof and provenance information to ranking results.
+This section specifies the integration between the traceability provisions of this chapter and ICO Std 2001 (Digital Product Passport — Credibility & Quality, DPP-CQ). The DPP-CQ framework provides a standardised mechanism for attaching cryptographic proof and provenance information to ranking results.
 
 ### 10.4.1 Digital Product Passport for Rankings
 

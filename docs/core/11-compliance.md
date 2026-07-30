@@ -4,7 +4,7 @@
 
 ---
 
-This chapter specifies the mechanisms for declaring compliance with ICO Std 2002, defines three compliance levels, establishes the processes for self-assessment and third-party certification, and addresses the relationship between ICO Std 2002 and ICO Std 2001 (Digital Product Passport — Computational Quality, DPP-CQ). It provides a structured framework through which ranking entities can demonstrate their adherence to the methodological, transparency, and audit requirements of this standard.
+This chapter specifies the mechanisms for declaring compliance with ICO Std 2002, defines three compliance levels, establishes the processes for self-assessment and third-party certification, and addresses the relationship between ICO Std 2002 and ICO Std 2001 (Digital Product Passport — Credibility & Quality, DPP-CQ). It provides a structured framework through which ranking entities can demonstrate their adherence to the methodological, transparency, and audit requirements of this standard.
 
 ---
 
@@ -455,7 +455,7 @@ Upon withdrawal, the ranking entity shall immediately cease using the compliance
 
 ## 11.6 Relationship with ICO Std 2001 (DPP-CQ)
 
-This section specifies the relationship between ICO Std 2002 (Tianji Ranking Methodology Standard) and ICO Std 2001 (Digital Product Passport — Computational Quality, DPP-CQ). The two standards are complementary and are designed to be used together to provide a comprehensive framework for the quality, transparency, and verifiability of ranking systems.
+This section specifies the relationship between ICO Std 2002 (Tianji Ranking Methodology Standard) and ICO Std 2001 (Digital Product Passport — Credibility & Quality, DPP-CQ). The two standards are complementary and are designed to be used together to provide a comprehensive framework for the quality, transparency, and verifiability of ranking systems.
 
 ### 11.6.1 Complementary Scope
 

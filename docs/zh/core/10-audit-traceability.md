@@ -458,7 +458,7 @@ d) **后续跟踪**: The auditor shall verify the effectiveness of corrective ac
 
 ## DPP-CQ集成
 
-本节规定本章的可追溯性条款与ICO Std 2001（数字产品护照——计算质量，DPP-CQ）之间的集成。DPP-CQ框架为将密码学证明和溯源信息附加到排名结果提供了标准化机制。
+本节规定本章的可追溯性条款与ICO Std 2001（数字产品护照——可信度与质量，DPP-CQ）之间的集成。DPP-CQ框架为将密码学证明和溯源信息附加到排名结果提供了标准化机制。
 
 ### 排名的数字产品护照
 
