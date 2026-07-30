@@ -170,9 +170,9 @@ ICO 标准生态系统的连贯治理和演进。
 
 ### 0.4.1 For Ranking Practitioners | 面向排名从业者
 
-Ranking practitioners — including ranking organisations, consulting firms, and in-house assessment teams — should use this standard as the methodological foundation for designing, implementing, and publishing ranking systems. The core layer (Chapters 1–11) provides the mandatory requirements applicable to all rankings, while the extension modules (SE-01 to SE-09) provide domain-specific guidance. Practitioners should:
+Ranking practitioners — including ranking organisations, consulting firms, and in-house assessment teams — should use this standard as the methodological foundation for designing, implementing, and publishing ranking systems. The core layer (Chapters 1–11) provides the mandatory requirements applicable to all rankings, while the extension modules (SE-01 to SE-10) provide domain-specific guidance. Practitioners should:
 
-排名从业者——包括排名机构、咨询公司和内部评估团队——应将本标准作为设计、实施和发布排名系统的方法论基础。核心层（第1–11章）提供适用于所有排名的强制性要求，扩展模块（SE-01至SE-09）提供领域特定指引。从业者应：
+排名从业者——包括排名机构、咨询公司和内部评估团队——应将本标准作为设计、实施和发布排名系统的方法论基础。核心层（第1–11章）提供适用于所有排名的强制性要求，扩展模块（SE-01至SE-10）提供领域特定指引。从业者应：
 
 — begin by assessing the conformance of existing ranking systems against the core requirements;
 首先评估现有排名系统对核心要求的一致性；
@@ -212,6 +212,30 @@ Policymakers and regulators should use this standard as a reference framework fo
 
 — a mechanism for mutual recognition of ranking conformance across jurisdictions.
 跨管辖区域排名一致性相互认可的机制。
+
+## 0.5 Structure of the Standard | 标准的结构
+
+ICO Std 2002 comprises the following components:
+
+ICO Std 2002 由以下部分组成：
+
+— **Core specification** (Chapters 0–11): the foundational and normative requirements applicable to all ranking systems;
+**核心规范**（第0–11章）：适用于所有排名系统的基础性和规范性要求；
+
+— **Extension modules** (SE-01 through SE-10): domain-specific supplements to the core specification;
+**扩展模块**（SE-01至SE-10）：核心规范的领域特定补充；
+
+— **Annexes**: informative and normative annexes providing supplementary guidance, mappings, and governance provisions:
+**附录**：提供补充指引、映射和治理规定的资料性和规范性附录：
+
+  - Annex A (informative): IREG Berlin Principles Mapping | 附录A（资料性）：IREG柏林原则对照表
+  - Annex B (informative): ISO Standards Alignment | 附录B（资料性）：ISO标准对齐说明
+  - Annex C (informative): Application Examples | 附录C（资料性）：应用示例
+  - Annex D (normative): RMTC Rules of Procedure — the governance framework for the Ranking Methodology Technical Committee | 附录D（规范性）：排名方法学技术委员会（RMTC）议事规则
+
+The normative annexes (currently Annex D) form an integral part of the standard and have the same authoritative force as the main body. Informative annexes provide guidance and context but do not impose normative requirements.
+
+规范性附录（目前为附录D）是标准的组成部分，与正文具有同等效力。资料性附录提供指引和背景，但不施加规范性要求。
 
 ---
 

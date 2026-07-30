@@ -140,9 +140,9 @@ Chapters 4 through 9 establish the core methodological requirements applicable t
 
 ### 1.2.2 Extension Framework | 扩展框架
 
-The extension modules (SE-01 through SE-09) provide domain-specific requirements that supplement the core methodology requirements for particular categories of ranking systems. Each extension module:
+The extension modules (SE-01 through SE-10) provide domain-specific requirements that supplement the core methodology requirements for particular categories of ranking systems. Each extension module:
 
-扩展模块（SE-01至SE-09）提供补充特定类别排名系统核心方法论要求的领域特定要求。每个扩展模块：
+扩展模块（SE-01至SE-10）提供补充特定类别排名系统核心方法论要求的领域特定要求。每个扩展模块：
 
 — specifies indicators and data sources applicable to its domain;
 规定适用于其领域的指标和数据源；
@@ -169,6 +169,28 @@ Chapters 10 and 11 establish the verification, audit, and compliance provisions,
 — conformance assessment and compliance procedures (Chapter 11).
 合规评估和合规程序（第11章）。
 
+### 1.2.4 Annexes | 附录
+
+This standard includes the following annexes:
+
+本标准包含以下附录：
+
+— **Annex A** (informative): IREG Berlin Principles Mapping — detailed mapping between the IREG Berlin Principles and ICO Std 2002 provisions;
+**附录A**（资料性）：IREG柏林原则对照表——IREG柏林原则与ICO Std 2002条款之间的详细映射；
+
+— **Annex B** (informative): ISO Standards Alignment — systematic alignment with ISO standards and terminology cross-references;
+**附录B**（资料性）：ISO标准对齐说明——与ISO标准的系统性对齐及术语交叉引用；
+
+— **Annex C** (informative): Application Examples — illustrative examples applying the standard across different ranking domains;
+**附录C**（资料性）：应用示例——在不同排名领域应用本标准的示例；
+
+— **Annex D** (normative): Rules of Procedure for the Ranking Methodology Technical Committee (RMTC) — governance framework governing the composition, decision-making, and operations of the RMTC, including the RMTC Code of Conduct and Appeal Handling Procedure.
+**附录D**（规范性）：排名方法学技术委员会（RMTC）议事规则——治理RMTC的组成、决策和运作的治理框架，包括RMTC行为准则和申诉处理程序。
+
+The normative annexes (Annex D) form an integral part of this standard and shall be complied with by any organisation claiming conformance. The informative annexes (Annexes A, B, and C) provide supplementary guidance and context but do not impose normative requirements.
+
+规范性附录（附录D）是本标准的组成部分，任何声称符合的组织均应遵守。资料性附录（附录A、B和C）提供补充指引和背景，但不施加规范性要求。
+
 ## 1.3 Exclusions | 排除内容
 
 ### 1.3.1 Out of Scope | 不在范围内
@@ -177,9 +199,9 @@ The following are explicitly outside the scope of this standard:
 
 以下明确不在本标准范围内：
 
-a) **Domain-specific indicator systems**: This standard does not prescribe the specific indicators, data sources, or scoring procedures for any particular domain. Domain-specific requirements are defined in the extension modules (SE-01 to SE-09), which are separate from the core standard.
+a) **Domain-specific indicator systems**: This standard does not prescribe the specific indicators, data sources, or scoring procedures for any particular domain. Domain-specific requirements are defined in the extension modules (SE-01 to SE-10), which are separate from the core standard.
 
-领域特定指标体系：本标准不规定任何特定领域的具体指标、数据源或评分程序。领域特定要求在扩展模块（SE-01至SE-09）中定义，与核心标准分离。
+领域特定指标体系：本标准不规定任何特定领域的具体指标、数据源或评分程序。领域特定要求在扩展模块（SE-01至SE-10）中定义，与核心标准分离。
 
 b) **Legal and regulatory requirements**: This standard does not replace, override, or substitute for any legal or regulatory requirements applicable to ranking systems in any jurisdiction. Compliance with applicable laws and regulations remains the responsibility of the ranking entity.
 
